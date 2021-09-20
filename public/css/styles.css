@@ -38,17 +38,43 @@ html {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background: url(https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZWNvJTIwcGFwZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80);
+  background: url(https://media.istockphoto.com/photos/empty-desk-picture-id639789778?b=1&k=20&m=639789778&s=170667a&w=0&h=9ZMV2n-Ugnwv05G4VK5C8uSNMSqOLEs_IPyh9zObgWY=);
   repeat: center;
   background-size: cover;
   background-color: transparent;
-  min-height: 40vh;
-  margin: 40px auto;
+
+  min-height: 60vh;
+}
+
+@media only screen and (max-width: 567px) {
+  .heading {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .intro {
   width: calc(100% / 3);
 }
 
+/*.heading::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(231, 231, 241, 0.8),
+      rgba(179, 179, 206, 0.7)
+    ),
+    url(https://st3.depositphotos.com/7893620/16034/i/600/depositphotos_160346114-stock-photo-spices-aromatic-herbs-and-fresh.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}*/
 .content {
   margin: 50px auto;
 }
